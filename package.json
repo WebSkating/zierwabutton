@@ -1,6 +1,6 @@
 {
   "name": "zierwabutton",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "lib/zierwabutton.umd.min.js",
   "keywords": [
     "zierwa"
@@ -12,6 +12,15 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebSkating/zierwabutton.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebSkating/zierwabutton.git"
+  },
+  "homepage": "https://github.com/WebSkating/zierwabutton/blob/master/README.md",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-plugin-eslint": "^4.5.0",
@@ -26,6 +35,5 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name zierwabutton --dest lib packages/index.js"
-  },
-  "license": "ISC"
+  }
 }
