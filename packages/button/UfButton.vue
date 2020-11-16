@@ -1,7 +1,7 @@
 <!--
  * @Author: sunch
  * @Date: 2020-07-15 10:24:27
- * @LastEditTime: 2020-11-13 15:30:50
+ * @LastEditTime: 2020-11-16 11:05:35
  * @LastEditors: Please set LastEditors
  * @Description: （未完成）自定义按钮
  * @FilePath: 
@@ -113,12 +113,12 @@ export default {
   mounted() {
     this.content = this.$refs.content.innerHTML
     setTimeout(()=>{
-      this.panelWidth = this.$(this.$refs.btn).outerWidth()
+      this.panelWidth = this.$refs.btn.offsetWidth
       if(this.type === 'combox'){
-        this.panelTop = this.$(this.$refs.btn).outerHeight() + 1
+        this.panelTop = this.$refs.btn.offsetHeight + 1
       }
       if(this.type === 'comboxlink'){
-        this.panelTop = this.$(this.$refs.btn).outerHeight() + 5
+        this.panelTop = this.$refs.btn.offsetHeight + 5
       }
     }, 20)
   },
